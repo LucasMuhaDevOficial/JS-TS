@@ -1,0 +1,27 @@
+// define a class
+class Person {
+    private name: string;
+    private age: number;
+    
+    constructor(name: string, age: number) {
+      this.name = name;
+      this.age = age;
+    }
+    
+    public getFullName(): string {
+      return this.name;
+    }
+    
+    public getAge(): number {
+      return this.age;
+    }
+  }
+  
+  // create an instance of the class
+  const person = new Person("John Doe", 30);
+  
+  // call a method on the instance
+  console.log(person.getFullName()); // Output: "John Doe"
+  
+  // call another method on the instance
+  console.log(person.getAge()); // Output: 30
